@@ -208,92 +208,179 @@ div.button-container {
     color: #0077D6; /* Warna teks judul "Tentang Kami" */
   }
 
-  .tentang-kami h4 {
-    font-size: 24px; /* Ukuran font untuk subjudul */
-    font-weight: 500;
-    margin-bottom: 10px; /* Jarak bawah subjudul */
-    text-align: justify; /* Meratakan teks ke kiri dan kanan */
-  }
-
-  .tentang-kami p {
-    font-size: 18px; /* Ukuran font untuk teks paragraf */
-    line-height: 1.5; /* Spasi antarbaris teks */
-    margin-bottom: 20px; /* Jarak bawah paragraf */
-    text-align: justify; /* Meratakan teks ke kiri dan kanan */
-  }
-
-  /* Gaya untuk elemen "text" yang berisi left-text dan right-text */
-.text {
-    margin-top: 0px;
-    display: flex; /* Menggunakan flexbox untuk mengatur tata letak berdampingan */
-    justify-content: space-between; /* Mengatur jarak antara left-text dan right-text */
-  }
-  
-  /* Gaya untuk left-text (sebelah kiri) */
-  .left-text {
-    flex-basis: 45%; /* Lebar left-text */
-    padding-right: 20px; /* Jarak kanan left-text dari right-text */
-  }
-  
-  /* Gaya untuk right-text (sebelah kanan) */
-  .right-text {
-    flex-basis: 45%; /* Lebar right-text */
-  }
-
-
-/* footer */
-footer{
-    background: linear-gradient(to right, var(--bg-color), var(--secont-bg-color));
-    padding: 70px 0;
-    box-sizing: border-box;
+  /* CSS untuk memberikan jarak antara elemen <h4> dan <p> */
+.tentang-kami h4.center {
+  margin-bottom: 10px; /* Atur jarak bawah elemen <h4> */
 }
 
-.container{
-    max-width: 1170px;
-    background: red;
-    margin: auto;
+.tentang-kami p {
+  margin-top: 10px; /* Atur jarak atas elemen <p> */
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
+
+  /* CSS untuk meratakan teks dalam elemen <p> */
+.tentang-kami p {
+  text-align: justify;
 }
-ul{
-    list-style: none;
+
+
+/* Styling footer */
+.footer {
+  background: linear-gradient(to right, var(--bg-color), var(--secont-bg-color)); /* Ganti dengan warna latar belakang yang Anda inginkan */
+  color: var(--text-color); /* Ganti dengan warna teks yang sesuai */
+  padding: 40px 0;
 }
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
 }
-.footer-col h4{
-    font-size: 18;
-    color: var(--text-color);
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500;
-    position: relative;
-    line-height: 1.2; /* Tambahkan line-height */
+
+.footer-col h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+  line-height: 1.2;
 }
-.footer-col h4::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: var(--text-color);
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--text-color); /* Ganti dengan warna yang sesuai */
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
-.footer-col ul li  a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ddd;
-    text-decoration: none;
-    font-weight: 300;
-    color: var(--text-color);
-    display: block;
-    transition: all 0.3s ease;
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
 }
-.footer-col ul li a:hover{
-    color: var(--text-color);
-    padding-left: 10px;
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ddd; /* Ganti dengan warna teks yang sesuai */
+  display: block;
+  transition: all 0.3s ease;
+  line-height: 1.2;
 }
+
+.footer-col ul li a:hover {
+  color: var(--text-color); /* Ganti dengan warna teks saat digulirkan yang sesuai */
+  padding-left: 10px;
+}
+
+/* Styling ikon media sosial */
+.footer-col ul a {
+  font-size: 30px;
+  color: var(--text-color); /* Ganti dengan warna ikon yang sesuai */
+  text-decoration: none;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul a:hover {
+  color: var(--bg-color); /* Ganti dengan warna ikon saat digulirkan yang sesuai */
+}
+
+
+/* Page info kesehatan */
+.beranda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Sesuaikan dengan tinggi yang Anda inginkan */
+  background: linear-gradient(to right, var(--bg-color), var(--secont-bg-color));
+}
+
+.info {
+  padding: 100px ; /* Atur padding atas dan bawah sesuai kebutuhan */
+  background: var(--text-color);
+  text-align: center;
+}
+
+.info .container {
+  display: flex;
+  flex-direction: column; /* Mengatur elemen berada dalam satu kolom */
+  align-items: center; /* Mengatur teks tombol berada di tengah secara horizontal */
+  justify-content: center; /* Mengatur tombol berada di tengah secara vertikal */
+  height: 100%;
+}
+
+.info .btn {
+  width: 500px; /* Atur panjang tombol */
+  height: 100px; /* Atur tinggi tombol */
+  margin: 10px; /* Atur jarak antara tombol */
+  display: block; /* Membuat tombol menjadi blok agar dapat mengatur lebar */
+  line-height: 50px; /* Mengatur jarak vertikal agar teks berada di tengah tombol */
+  font-size: 24px; /* Ukuran font teks tombol */
+  font-weight: 400;
+  background: linear-gradient(to top, var(--secont-bg-color), var(--bg-color)); /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none; /* Menghapus border tombol */
+  cursor: pointer; /* Mengubah kursor saat mengarah ke tombol */
+  text-decoration: none; /* Menghilangkan dekorasi teks */
+  border-radius: 20px; /* Mengatur sudut melengkung pada tombol */
+}
+
+/* Efek hover saat mouse diarahkan ke tombol */
+.btn:hover {
+  background-color: #005DA4; /* Warna latar belakang saat hover */
+}
+
+
+/* Page Produk */
+.produk {
+  margin: 220px;
+    text-align: center;
+    padding: 100px;
+  background: var(--text-color);
+}
+
+.card {
+  text-align: left;
+  display: inline-block; /* Menjadikan kartu inline-block agar berada dalam satu baris */
+  width: 100%; /* Kartu mengisi lebar penuh container */
+  margin: 0 auto; /* Mengatur margin horizontal otomatis agar kartu berada di tengah */
+  background-color: white; /* Warna latar belakang kartu */
+  border-radius: 15px; /* Mengatur sudut melengkung pada kartu */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Mengatur bayangan kartu */
+  margin-bottom: 20px; /* Jarak antara kartu */
+}
+
+.card-body {
+  padding: 20px; /* Atur padding dalam kartu */
+}
+
+.card img {
+  max-width: 100%; /* Gambar kartu agar responsif */
+}
+
+.card-title {
+  font-size: 24px; /* Ukuran font judul kartu */
+  font-weight: bold; /* Ketebalan font judul kartu */
+}
+
+.card-text {
+  font-size: 16px; /* Ukuran font teks kartu */
+}
+
+.btn-primary {
+  background-color: #0077D6; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Hapus border tombol */
+  cursor: pointer; /* Ganti kursor saat mengarah ke tombol */
+}
+
+.btn-primary:hover {
+  background-color: #005DA4; /* Warna latar belakang saat hover */
+}
+
+
