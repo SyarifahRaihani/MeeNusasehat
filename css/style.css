@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+:root{
+    --bg-color: #0077D6;
+    --secont-bg-color: #8BC7F8;
+    --text-color: #fff;
+
+    --h1-font: 4rem;
+    --h2-font: 2rem;
+    --h4-font: 1.1rem;
+}
+
+/* Mengubah latar belakang navbar */
+.navbar {
+    background: linear-gradient(to right, var(--bg-color), var(--secont-bg-color));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+ 
+  }
+
+  /* Mengubah warna teks pada navbar-brand (logo) */
+.navbar-brand {
+    color: var(--text-color);
+  }
+
+  /* Mengubah latar belakang tombol Toggle */
+.navbar-toggler {
+    background-color: transparent; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    border-color: transparent; /* Ganti dengan warna border yang Anda inginkan */
+  }
+
+  /* Mengubah latar belakang sidebar */
+.offcanvas {
+    background-color: var(--bg-color); /* Ganti dengan warna latar belakang yang Anda inginkan */
+  }
+
+  /* Mengubah warna teks pada sidebar header */
+.offcanvas-header {
+    background-color: var(--bg-color); /* Ganti dengan warna latar belakang yang Anda inginkan */
+    color: var(--text-color); /* Ganti dengan warna teks yang Anda inginkan */
+  }
+
+  /* Mengubah warna tombol Close pada sidebar header */
+.offcanvas-header .btn-close {
+    color: var(--text-color); /* Ganti dengan warna teks yang Anda inginkan */
+  }
+
+  /* Mengubah warna teks pada judul sidebar */
+.offcanvas-title {
+    color: var(--text-color); /* Ganti dengan warna teks yang Anda inginkan */
+  }
+
+/* Mengubah warna teks tautan <a> pada navbar */
+.navbar a.nav-link {
+  color: var(--text-color); /* Warna teks */
+}
+
+/* Mengubah warna teks tautan <a> saat dihover (mengambang) */
+.navbar a.nav-link:hover {
+    color: #000; /* Warna teks saat dihover */
+  }
+
+/* Membungkus tombol-tombol dalam sebuah div dan mengatur tata letak dengan flexbox */
+div.button-container {
+    display: flex;
+    justify-content: space-between; /* Membuat ruang antara tombol Login dan Sign Up */
+    align-items: center; /* Mengatur tombol secara vertikal di tengah */
+  }
+  
+  /* Mengubah warna teks tombol Login dan Sign Up */
+  .btn.btn-outline-light {
+    color: var(--text-color);
+    margin: 5px; /* Ubah nilai margin sesuai dengan preferensi Anda */
+  }
+  
+  /* Mengubah warna teks tombol saat dihover (mengambang) */
+  .btn.btn-outline-light:hover {
+    color: var(--bg-color);
+  }
+
+
+  /* bagian section */
+  section{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Sesuaikan dengan tinggi yang Anda inginkan */
+
+    background: linear-gradient(to right, var(--bg-color), var(--secont-bg-color));
+  }
+
+  .beranda-text {
+    text-align: center;
+  }
+  
+  .beranda-text h4{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 3.5;
+  }
+
+  .beranda-text h1{
+    color: var(--text-color);
+    font-size: var(--h1-font);
+    font-size: 100;
+    margin: 20px;
+  }
+
+  .beranda-text h2{
+    color: var(--text-color);
+    font-size: var(--h2-font);
+    margin: 10px;
+  }
+
+  button.btn.btn-outline {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--text-color); /* Warna teks tombol */
+    border: 2px solid var(--text-color); /* Garis tepi tombol */
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+  button.btn.btn-outline:hover {
+    background-color: #0077D6; /* Warna latar belakang tombol saat dihover */
+    color: #fff; /* Warna teks tombol saat dihover */
+  }
+
+
+  /* Gaya untuk bagian "Fitur Unggulan Kami" */
+.fitur {
+    margin-top: 100px;
+    padding: 100px ; /* Atur padding atas dan bawah sesuai kebutuhan */
+    text-align: center;
+    background: var(--text-color);
+  }
+
+  .fitur h2 {
+    color: var(--bg-color);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px; /* Jarak bawah dari judul ke card-group */
+  }
+
+  .card-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Jarak antara card */
+  }
+
+  .card {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Sudut elemen card dibulatkan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk card */
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+ /* Gaya untuk tombol dalam card */
+.btn-primary {
+    background-color: #0077D6; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: 10px; /*  border */
+    border-radius: 5px; /* Sudut tombol dibulatkan */
+    padding: 10px 20px; /* Padding tombol */
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background-color: #0055A4; /* Warna latar belakang tombol saat dihover */
+    color: #fff; /* Warna teks tombol saat dihover */
+  }
+
+  /* tentang kami */
+  .tentang-kami {
+    margin-top: 100px;
+    padding: 100px ; /* Atur padding atas dan bawah sesuai kebutuhan */
+    text-align: center;
+    background: var(--text-color);
+  }
+
+  .tentang-kami h2 {
+    font-size: 36px; /* Ukuran font untuk judul "Tentang Kami" */
+    font-weight: bold;
+    margin-bottom: 30px; /* Jarak bawah judul "Tentang Kami" */
+    color: #0077D6; /* Warna teks judul "Tentang Kami" */
+  }
+
+  .tentang-kami h4 {
+    font-size: 24px; /* Ukuran font untuk subjudul */
+    font-weight: 500;
+    margin-bottom: 10px; /* Jarak bawah subjudul */
+    text-align: justify; /* Meratakan teks ke kiri dan kanan */
+  }
+
+  .tentang-kami p {
+    font-size: 18px; /* Ukuran font untuk teks paragraf */
+    line-height: 1.5; /* Spasi antarbaris teks */
+    margin-bottom: 20px; /* Jarak bawah paragraf */
+    text-align: justify; /* Meratakan teks ke kiri dan kanan */
+  }
+
+  /* Gaya untuk elemen "text" yang berisi left-text dan right-text */
+.text {
+    margin-top: 0px;
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak berdampingan */
+    justify-content: space-between; /* Mengatur jarak antara left-text dan right-text */
+  }
+  
+  /* Gaya untuk left-text (sebelah kiri) */
+  .left-text {
+    flex-basis: 45%; /* Lebar left-text */
+    padding-right: 20px; /* Jarak kanan left-text dari right-text */
+  }
+  
+  /* Gaya untuk right-text (sebelah kanan) */
+  .right-text {
+    flex-basis: 45%; /* Lebar right-text */
+  }
+
+
+/* footer */
+footer{
+    background: linear-gradient(to right, var(--bg-color), var(--secont-bg-color));
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    background: red;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18;
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    line-height: 1.2; /* Tambahkan line-height */
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--text-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li  a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--text-color);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: var(--text-color);
+    padding-left: 10px;
+}
