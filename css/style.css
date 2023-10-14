@@ -58,6 +58,11 @@ body {
 .offcanvas-header .btn-close {
     color: var(--text-color); /* Ganti dengan warna teks yang Anda inginkan */
   }
+.offcanvas-body .nav-item .nav-link{
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+}
 
   /* Mengubah warna teks pada judul sidebar */
 .offcanvas-title {
