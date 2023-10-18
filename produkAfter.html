@@ -83,8 +83,16 @@
                 <a class="nav-link" href="chatAfter.html">Tanya Dokter</a>
               </li>
             </ul>
-            <div class="button-container">
-              <a href="profil.html"><i class='bx bxs-user-circle'></i></i></a>
+            <div class="dropdown">
+              <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bx bxs-user-circle"></i>
+              </a>
+          
+              <ul class="dropdown-menu ropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="profil.html">Profil Saya</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html" onclick="return confirm('Anda Yakin Ingin Keluar?')">Keluar</a></li>
+              </ul>
             </div>
           </div>
         </div>

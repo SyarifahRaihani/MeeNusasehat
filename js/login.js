@@ -9,3 +9,11 @@ registerBtn.addEventListener('click', () =>{
 loginBtn.addEventListener('click', () =>{
     container.classList.remove("active");
 });
+
+function showAlert() {
+    alert("Selamat Datang di Website MeeNusasehat!");
+}
+
+function showAlert1() {
+    alert("Registrasi sudah berhasil silahkan login kembali!");
+}

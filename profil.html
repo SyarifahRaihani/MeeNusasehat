@@ -83,9 +83,16 @@
                 <a class="nav-link" href="chatAfter.html">Tanya Dokter</a>
               </li>
             </ul>
-            <div class="button-container">
-              <a href=""><i class='bx bxs-user-circle'></i></i></a>
-             
+            <div class="dropdown">
+              <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bx bxs-user-circle"></i>
+              </a>
+          
+              <ul class="dropdown-menu ropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="profil.html">Profil Saya</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html" onclick="return confirm('Anda Yakin Ingin Keluar?')">Keluar</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -101,42 +108,98 @@
                     <div class="account-settings">
                         <div class="user-profile">
                             <div class="user-profile-image">
-                                <img src="img/download (1).jpeg" class="img-thumbnail" alt="Profile Image">
+                                <img src="img/Instagram user.jpg" class="img-thumbnail" alt="Profile Image">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10">
             <div class="card h-100">
                 <div class="card-header">
                     <div class="card-title">Profil Saya</div>
-                    <a href="" class="btn">Ubah Profile</a>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#editProfileModal">Ubah Profil</button>
                 </div>
                 <div class="card-body">
                     <div class="row gutters">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="form-group">
                                 <label for="nama">Nama</label>
-                                <input type="text" class="form-control" id="nama" placeholder="John Doe" name="nama" value="John Doe" readonly>
+                                <input type="text" class="form-control" id="nama"  name="nama" value="Syarifah Raihani" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="text" class="form-control" id="email" placeholder="john.doe@example.com" name="email" value="john.doe@example.com" readonly>
+                                <input type="text" class="form-control" id="email"  name="email" value="syfraihani@gmail.com" readonly>
                             </div>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="text-right">
-                                <!-- Konten tambahan sesuai kebutuhan -->
+                            <div class="form-group">
+                              <label for="tanggal">Tanggal Lahir</label>
+                              <input type="text" class="form-control" id="tanggal"  name="tanggal" value="06/19/2001" readonly>
                             </div>
+                            <div class="form-group">
+                              <label for="tempatlahir">Tempat Lahir</label>
+                              <input type="text" class="form-control" id="tempatlahir"  name="tempatlahir" value="Pontianak" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <input type="image" class="form-control" id="alamat"  name="alamat" value="JL. Kota Baru" readonly>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- modal form -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editProfileModalLabel">Ubah Profil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form for editing user profile -->
+        <form>
+          <div class="form-group">
+            <label for="edit-nama">Nama</label>
+            <input type="text" class="form-control" id="edit-nama" placeholder="Masukan Nama" name="edit-nama" >
+          </div>
+          <div class="form-group">
+            <label for="edit-email">Email</label>
+            <input type="text" class="form-control" id="edit-email" placeholder="Masukan Email" name="edit-email" >
+          </div>
+          <div class="form-group">
+            <label for="edit-password">Password</label>
+            <input type="password" class="form-control" id="edit-password" placeholder="Masukan Password" name="edit-password" >
+          </div>
+          <div class="form-group">
+            <label for="edit-tanggal">Tanggal Lahir</label>
+            <input type="date" class="form-control" id="edit-tanggal" placeholder="Masukan Tanggal Lahir" name="edit-Tanggal" >
+          </div>
+          <div class="form-group">
+            <label for="edit-tempatlahir">Tempat Lahir</label>
+            <input type="text" class="form-control" id="edit-tempatlahir" placeholder="Masukan Tempat Lahir" name="edit-tempatlahir" >
+          </div>
+          <div class="form-group">
+            <label for="edit-alamat">Alamat</label>
+            <input type="text" class="form-control" id="edit-alamat" placeholder="Masukan Alamat" name="edit-alamat" >
+          </div>
+          <div class="form-group">
+            <label for="edit-foto">Foto</label>
+            <input type="file" class="form-control" id="edit-foto" placeholder="Masukan Foto" name="edit-foto" >
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="saveChanges">Simpan Perubahan</button>
+      </div>
+    </div>
+  </div>
 </div>
 
     <!-- Footer -->
@@ -168,5 +231,12 @@
         </div>        
       </div>
     </footer>
+
+    <!-- Include Bootstrap JS and your custom JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
