@@ -99,6 +99,11 @@ div.button-container {
     background-color: var(--text-2-color);
   }
 
+  .bxs-user-circle {
+    font-size: 50px; /* Ukuran ikon sesuai kebutuhan */
+    color: #fff; /* Warna ikon sesuai kebutuhan */
+    text-decoration: none; /* Menghilangkan garis bawah tautan */
+}
 
   .beranda {
     text-align: center;
@@ -502,4 +507,22 @@ div.button-container {
 
 .btn:hover {
   background-color: #0056b3;
+}
+
+.profil.content-wrapper {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
