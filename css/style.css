@@ -94,10 +94,6 @@ div.button-container {
     text-decoration: none; 
 }
 
-
-
-
-
 /* bagian Beranda */
   .beranda {
     text-align: center;
@@ -161,7 +157,7 @@ div.button-container {
 
 .fitur p {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .card {
